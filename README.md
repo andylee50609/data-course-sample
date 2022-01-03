@@ -36,6 +36,8 @@
 
 非結構化資料：title、description → 使用tfidf進行文本向量化
 
-針對向量化資料使用cosine similarity進行相似度比較，找出內容相似的商品以進行 9.83%之推薦準確率 。
+針對向量化資料使用cosine similarity進行相似度比較，找出內容相似的商品以進行推薦，若客戶於過去未有購買紀錄，則以Rule-Based的方式進行推薦。
+
+最終推薦系統有9.83%之推薦準確率，較Week1的Rule-Based高出約5%。
 
 
