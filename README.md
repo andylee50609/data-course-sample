@@ -1,6 +1,4 @@
-【Week1 Ruled-based recommendation】
-
-清楚記載這個專案的目的和結果，最後的推薦分數是多少，是否有成功
+========【Week1 Ruled-based recommendation】========
 
 目的：透過真實電商之資料集(包含產品資訊以及顧客評論資訊)進行資料分析，進而提升客戶購買之機率。
 
@@ -22,8 +20,7 @@
 
 [rule_3]：1個月之資料量有不足之可能，故造成推薦不準確
 
-【Week2 Content-based recommendation】
-清楚記載這個專案的目的和結果，最後的推薦分數是多少，是否有成功
+========【Week2 Content-based recommendation】========
 
 目的：透過真實電商之資料集(商品名稱、描述、子類別、品牌)進行資料分析，進而提升客戶購買之機率。
 
@@ -38,5 +35,36 @@
 針對向量化資料使用cosine similarity進行相似度比較，找出內容相似的商品以進行推薦，若客戶於過去未有購買紀錄，則以Rule-Based的方式進行推薦。
 
 最終推薦系統有9.83%之推薦準確率，較Week1的Rule-Based高出約5%。
+
+========【Week3 Collaborative recommendation】========
+
+目的：透過客戶評論之資料集(beauty)進行資料分析，進而提升客戶購買之機率。
+
+此次主要係以「Collaborative-Filtering(CF)」之方式進行客戶資料之分析以進行推薦，並以推薦之10項商品於201809被購買之機率進行效益評估，主要使用之方法如下user-based CF、item-based CF、surprise CF。
+
+※由於使用上述方法，所使用之RAM超出Colab的負荷，故部分結果係透過本機電腦進行，分析結果如下：
+
+user-based CF
+手刻版本，推薦準確率：0 % (Traning Data：2017/9-2018/8)
+手刻版本，推薦準確率：0 % (Traning Data：2016/9-2018/8)
+加上rule-based，推薦準確率：9.83% (Traning Data：2017/9-2018/8)
+加上rule-based，推薦準確率：1.35% (Traning Data：2016/9-2018/8)
+
+item-based CF
+手刻版本，推薦準確率：0 % (Traning Data：2017/9-2018/8)
+手刻版本，推薦準確率：0 % (Traning Data：2016/9-2018/8)
+加上rule-based，推薦準確率：9.66% (Traning Data：2017/9-2018/8)
+加上rule-based，推薦準確率：1.35% (Traning Data：2016/9-2018/8)
+
+surprise CF
+純套用surprise，推薦準確率：0.17 % (Traning Data：2017/9-2018/8)
+純套用surprise，推薦準確率：0 % (Traning Data：2016/9-2018/8)
+加上rule-based，推薦準確率：9.83% (Traning Data：2017/9-2018/8)
+加上rule-based，推薦準確率：1.35% (Traning Data：2016/9-2018/8)
+
+經上述測試結果發現，透過CF分析之效果並不佳：經檢視資料此次測試資料客戶與訓練資料集之重覆性較低，故效果較差。
+
+
+
 
 
