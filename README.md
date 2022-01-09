@@ -45,21 +45,33 @@
 ※由於使用上述方法，所使用之RAM超出Colab的負荷，故部分結果係透過本機電腦進行，分析結果如下：
 
 user-based CF
+
 手刻版本，推薦準確率：0 % (Traning Data：2017/9-2018/8)
+
 手刻版本，推薦準確率：0 % (Traning Data：2016/9-2018/8)
+
 加上rule-based，推薦準確率：9.83% (Traning Data：2017/9-2018/8)
+
 加上rule-based，推薦準確率：1.35% (Traning Data：2016/9-2018/8)
 
 item-based CF
+
 手刻版本，推薦準確率：0 % (Traning Data：2017/9-2018/8)
+
 手刻版本，推薦準確率：0 % (Traning Data：2016/9-2018/8)
+
 加上rule-based，推薦準確率：9.66% (Traning Data：2017/9-2018/8)
+
 加上rule-based，推薦準確率：1.35% (Traning Data：2016/9-2018/8)
 
 surprise CF
+
 純套用surprise，推薦準確率：0.17 % (Traning Data：2017/9-2018/8)
+
 純套用surprise，推薦準確率：0 % (Traning Data：2016/9-2018/8)
+
 加上rule-based，推薦準確率：9.83% (Traning Data：2017/9-2018/8)
+
 加上rule-based，推薦準確率：1.35% (Traning Data：2016/9-2018/8)
 
 經上述測試結果發現，透過CF分析之效果並不佳：經檢視資料此次測試資料客戶與訓練資料集之重覆性較低，故效果較差。
