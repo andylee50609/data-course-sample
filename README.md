@@ -23,6 +23,8 @@
 [rule_3]：1個月之資料量有不足之可能，故造成推薦不準確
 
 
+
+
 【Week2 Content-based recommendation】
 清楚記載這個專案的目的和結果，最後的推薦分數是多少，是否有成功
 
